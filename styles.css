@@ -23,5 +23,5 @@ a:hover {
 }
 
 html, body, * {
-    cursor: url('cursor.png'), auto;
+    cursor: url('cursor.png') 25 30, auto; /* Offset the hotspot by 10px to the right and 10px down */
 }
