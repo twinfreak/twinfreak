@@ -1,6 +1,10 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
 body {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Sigmar', sans-serif; /* Use the Roboto font from Google Fonts */
     background: #f8f8f8;
 }
 
