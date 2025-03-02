@@ -1,6 +1,15 @@
+/* Import custom font */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('DaisyWheel.woff2') format('woff2'), 
+         url('DaisyWheel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     text-align: center;
-    font-family: 'Sigmar', sans-serif;
+    font-family: 'MyCustomFont', 'Sigmar', sans-serif; /* Use custom font first */
     background: #f8f8f8;
     cursor: url('cursor.png') 25 30, auto; /* Set default cursor on body */
 }
@@ -22,6 +31,7 @@ a {
 a:hover {
     color: yellow;
 }
+
 .construction-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -31,10 +41,12 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 /* Apply hover cursor to link and all its children */
 a:hover, a:hover * {
     cursor: url('hovercursor.png') 25 30, auto;
 }
+
 .uc {
     width: 300px;  /* Adjust the width as needed */
     height: auto;  /* Maintain aspect ratio */
