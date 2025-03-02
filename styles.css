@@ -1,27 +1,104 @@
-body {
-    text-align: center;
-    font-family: 'Sigmar', sans-serif; /* Use the Roboto font from Google Fonts */
-    background: #f8f8f8;
+/* CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-img {
-    width: 300px;
-    height: 300px;
-    margin-top: 200px;
+html {
+    font-size: 16px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Sigmar', sans-serif;
+    background: #f8f8f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.responsive-logo {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Default size */
     border-radius: 10px;
+    margin: 20px auto;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.construction {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #666;
 }
 
 a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
     font-weight: bold;
+    padding: 10px;
+    display: inline-block;
 }
 
 a:hover {
-    color: blue;
+    color: orange;
 }
 
-html, body, * {
-    cursor: url('cursor.png') 25 30, auto; /* Offset the hotspot by 10px to the right and 10px down */
+/* Mobile-first media queries */
+@media (max-width: 768px) {
+    .responsive-logo {
+        width: 70vw;
+        max-width: 250px;
+        margin-top: 50px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .construction {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .responsive-logo {
+        width: 80vw;
+        margin-top: 30px;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Cursor styles only for non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    html, body, * {
+        cursor: url('cursor.png') 25 30, auto;
+    }
+
+    a:hover, a:hover * {
+        cursor: url('hovercursor.png') 25 30, auto;
+    }
 }
