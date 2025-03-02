@@ -22,7 +22,7 @@ a {
 /* Remove the universal cursor rule and set it on body instead */
 
 a:hover {
-    color: blue;
+    color: yellow;
 }
 
 /* Apply hover cursor to link and all its children */
