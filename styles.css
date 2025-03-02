@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    cursor: url('cursor.png'), auto;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: blue;
+}
