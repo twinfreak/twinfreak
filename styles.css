@@ -52,7 +52,6 @@ a:hover, a:hover * {
     height: auto;  /* Maintain aspect ratio */
     margin-top: 20px; /* Adjust top margin to position it */
     margin-bottom: auto; /* Adjust bottom margin */
-    display: block;  /* Makes the image a block element (important for margin handling) */
     margin-left: auto;
     margin-right: auto; /* Centers the image horizontally */
 }
