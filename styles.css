@@ -2,6 +2,7 @@ body {
     text-align: center;
     font-family: 'Sigmar', sans-serif;
     background: #f8f8f8;
+    cursor: url('cursor.png') 25 30, auto; /* Set default cursor on body */
 }
 
 img {
@@ -18,11 +19,13 @@ a {
     font-weight: bold;
 }
 
-html, body, * {
-    cursor: url('cursor.png') 25 30, auto; /* Default cursor */
-}
+/* Remove the universal cursor rule and set it on body instead */
 
 a:hover {
     color: blue;
-    cursor: url('hovercursor.png') 25 30, auto; /* New cursor on hover */
+}
+
+/* Apply hover cursor to link and all its children */
+a:hover, a:hover * {
+    cursor: url('hovercursor.png') 25 30, auto;
 }
