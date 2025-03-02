@@ -2,7 +2,6 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     background: #f8f8f8;
-    cursor: url('cursor.png'), auto;
 }
 
 img {
@@ -21,4 +20,8 @@ a {
 
 a:hover {
     color: blue;
+}
+
+html, body, * {
+    cursor: url('cursor.png'), auto;
 }
