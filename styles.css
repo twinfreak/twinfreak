@@ -30,10 +30,10 @@ a:hover, a:hover * {
     cursor: url('hovercursor.png') 25 30, auto;
 }
 .uc {
-    width: 200px;  /* Adjust the width as needed */
+    width: 100px;  /* Adjust the width as needed */
     height: auto;  /* Maintain aspect ratio */
-    margin-top: 50px; /* Adjust top margin to position it */
-    margin-bottom: 20px; /* Adjust bottom margin */
+    margin-top: 30px; /* Adjust top margin to position it */
+    margin-bottom: 200px; /* Adjust bottom margin */
     display: block;  /* Makes the image a block element (important for margin handling) */
     margin-left: auto;
     margin-right: auto; /* Centers the image horizontally */
