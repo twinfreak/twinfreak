@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    font-family: 'Sigmar', sans-serif; /* Use the Roboto font from Google Fonts */
+    font-family: 'Sigmar', sans-serif;
     background: #f8f8f8;
 }
 
@@ -20,8 +20,9 @@ a {
 
 a:hover {
     color: blue;
+    cursor: url('hovercursor.png') 25 30, auto; /* New cursor on hover */
 }
 
 html, body, * {
-    cursor: url('cursor.png') 25 30, auto; /* Offset the hotspot by 10px to the right and 10px down */
+    cursor: url('cursor.png') 25 30, auto; /* Default cursor */
 }
