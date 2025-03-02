@@ -19,12 +19,18 @@ a {
     font-weight: bold;
 }
 
-/* Remove the universal cursor rule and set it on body instead */
-
 a:hover {
     color: yellow;
 }
-
+.construction-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 /* Apply hover cursor to link and all its children */
 a:hover, a:hover * {
     cursor: url('hovercursor.png') 25 30, auto;
