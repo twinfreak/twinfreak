@@ -18,11 +18,11 @@ a {
     font-weight: bold;
 }
 
+html, body, * {
+    cursor: url('cursor.png') 25 30, auto; /* Default cursor */
+}
+
 a:hover {
     color: blue;
     cursor: url('hovercursor.png') 25 30, auto; /* New cursor on hover */
-}
-
-html, body, * {
-    cursor: url('cursor.png') 25 30, auto; /* Default cursor */
 }
