@@ -32,7 +32,7 @@ a:hover, a:hover * {
 .uc {
     width: 150px;  /* Adjust the width as needed */
     height: auto;  /* Maintain aspect ratio */
-    margin-top: 30px; /* Adjust top margin to position it */
+    margin-top: 50px; /* Adjust top margin to position it */
     margin-bottom: 200px; /* Adjust bottom margin */
     display: block;  /* Makes the image a block element (important for margin handling) */
     margin-left: auto;
